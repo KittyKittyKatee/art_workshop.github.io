@@ -1,0 +1,49 @@
+.facts
+    &__wrap
+        display grid
+        grid-template-rows 1fr 12fr
+        position relative
+
+        max-width 880px
+
+        padding 110px 0
+        &::before
+            content ""
+
+            position absolute
+            top 7%
+            right -30px
+            z-index -1
+           
+            width 860px
+            height 410px
+
+            background-color light-gray
+    &__subtitle
+        margin-left 30px
+    &__elems
+        display flex
+        justify-content space-around
+        justify-self flex-end
+        position relative
+        z-index 10
+        
+        max-width 100%
+        width 790px
+
+        margin 0
+        margin-top 130px
+
+        list-style none
+    &__elem
+        display flex
+        flex-direction column
+
+        max-width 160px
+
+        font 400 16px/18px 'Lato', sans-serif
+        text-transform uppercase
+        b
+            font 700 48px/62px 'Lato', sans-serif
+
+        

@@ -1,0 +1,89 @@
+.header
+    position absolute
+    top 20px
+    left 0
+    z-index 10
+
+    width 100%
+    &__wrap
+        display flex
+        justify-content space-between
+
+        width 100%
+    &__logo
+        width 57px
+        height 58px
+        img
+            width 57px
+            height 58px
+    &__menu
+        display: flex
+        
+        list-style: none
+        
+        margin-right 6.8em
+    &__main
+        display flex
+        align-items center
+        height 175px
+        margin-right 60px
+    &__elem
+        margin-right 50px
+        &:last-child 
+            margin-right 0
+    &__link
+        text-decoration none
+        font 20px/24px 'Cera Pro Bold', sans-serif;
+        color white
+        transition all 0.3s ease-in-out
+        &:hover, &:active
+            color red
+            transform translate(-2px, 2px)
+    &__call
+        display flex
+        flex-direction column
+        align-items flex-end
+    &__phone
+        text-decoration none
+        font 300 20px/26px 'Lato', sans-serif
+        letter-spacing 1px
+        color white
+        margin-bottom 8px
+        cursor pointer
+        transition all 0.2s
+        &:hover
+            color yellow
+    &__button-call
+        text-decoration none
+        font 500 12px/16px 'Lato', sans-serif
+        letter-spacing 0.5px
+        text-transform uppercase
+        color white
+        cursor pointer
+        transition all 0.2s
+        position relative
+        &:hover
+            color yellow
+        &::before
+            content ""
+            position absolute
+            top 7px
+            left -44px
+            width 30px
+            height 1px
+            background yellow
+    &__burger 
+        display flex
+        flex-direction column
+        justify-content space-between
+        cursor pointer
+        span
+            width 20px
+            height 2px
+            background black
+            margin-bottom 3px
+            transition all 0.2s
+        &:hover, &:active
+            opacity .5
+    &__button
+        margin-right 30px

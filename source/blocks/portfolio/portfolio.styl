@@ -1,0 +1,98 @@
+.portfolio
+    &__wrap
+        padding-top 60px
+        padding-bottom 100px
+    &__mid
+        display grid
+        grid-template-areas "elem-6 elem-7 elem-7 elem-8" "elem-9 elem-7 elem-7 elem-10"
+        grid-template-rows 1fr 1fr
+        grid-template-columns 1fr 1fr 1fr 1fr
+        grid-gap 30px
+
+        max-height 556px
+
+        margin-top 30px
+        margin-bottom 50px
+    &__top
+        display grid
+        grid-template-areas "elem-1 elem-1 elem-2 elem-3" "elem-1 elem-1 elem-4 elem-4" "elem-5 elem-5 elem-4 elem-4"
+        grid-template-rows 1fr 1fr 1fr
+        grid-template-columns 1fr 1fr 1fr 1fr
+        grid-gap 30px
+
+        max-height 860px
+    &__bottom
+        display grid
+        grid-template-areas "elem-11 elem-11 elem-12 elem-12"
+        grid-template-rows 1fr
+        grid-template-columns 1fr 1fr
+        grid-gap 30px
+
+        max-height 270px
+    &__elem
+        position relative
+
+        height 100%
+        width 100%
+
+        text-decoration none
+        &:hover
+            .portfolio__hide
+                opacity 1
+    &__img
+        height 100%
+        width 100%
+        img
+            height 100%
+            width 100%
+            object-fit cover
+    &__hide
+        position absolute
+        z-index 10
+        top 0
+        left 0
+
+        height 100%
+        width 100%
+        
+        padding 22px
+        
+        border 2px solid black
+        box-sizing border-box
+
+        font 500 12px/18px 'Lato', sans-serif;
+        letter-spacing 2px
+        text-transform uppercase
+        color black
+        
+        background-color white
+        opacity 0
+        transition all 0.4s ease-in-out
+        span 
+            position absolute
+            bottom 15px
+
+.elem-1
+    grid-area elem-1
+.elem-2
+    grid-area elem-2
+.elem-3
+    grid-area elem-3
+.elem-4
+    grid-area elem-4
+.elem-5
+    grid-area elem-5
+.elem-6
+    grid-area elem-6
+.elem-7
+    grid-area elem-7
+.elem-8
+    grid-area elem-8
+.elem-9
+    grid-area elem-9
+.elem-10
+    grid-area elem-10
+.elem-11
+    grid-area elem-11
+.elem-12
+    grid-area elem-12

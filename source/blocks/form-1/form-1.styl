@@ -1,0 +1,141 @@
+.form-1
+    background fixed url(../../assets/images/design-project-bg.jpg) no-repeat 50% 50%
+    background-size cover
+    &__wrap
+        position relative
+        
+        padding-top 90px
+        padding-bottom 40px
+    &__content
+        display flex
+        flex-direction column
+        align-items center
+    &__subtitle
+        font 300 64px/96px 'Roboto Condensed', sans-serif
+        color white
+        text-align center
+    &__list
+        display grid
+        grid-template-columns 0.8fr 1fr
+        grid-row-gap 20px 
+        grid-column-gap 30px
+
+        max-width 840px
+
+        margin 0 auto
+        margin-top 45px
+        box-sizing border-box
+        padding-left 40px
+
+        list-style none
+    &__elem
+        position relative
+
+        margin-left 40px
+        box-sizing border-box
+        
+        line-height 18px
+        color white
+
+        &::before
+            content ""
+            position absolute
+            top 10px
+            left -44px
+
+            width 30px
+            height 1px
+
+            background white
+    &__title
+        margin-bottom 22px
+
+        font 400 84px/86px 'Roboto Condensed', sans-serif
+        color white
+        text-align center
+    &__text
+        margin-bottom 88px
+
+        font 300 24px/1 'Lato', sans-serif
+        color white
+    &__btn
+        button(yellow)
+
+        min-width 270px
+    &__agree
+        display flex
+
+        max-width 500px
+
+        margin 30px auto 0
+
+        font 300 12px/12px 'Lato', sans-serif
+        letter-spacing 0.5px
+        color white
+        p
+            width 90%
+    &__checkbox
+        display flex
+        position relative
+
+        width 14px
+        height 14px
+
+        margin-right 10px
+        border 1px solid #cac0b3
+        border-radius: 2px
+        box-sizing border-box
+
+        background transparent
+        transition all 0.2s
+        &:hover
+            border 1px solid yellow
+
+            background url(../../assets/images/check.png) no-repeat 50% 50%
+        input
+            position absolute
+
+            width 14px
+            height 14px
+
+            margin 0
+
+            visibility hidden
+
+.form
+    display flex
+    flex-direction column
+
+    max-width 100%
+    width 270px
+
+    margin 35px auto 0
+    &__btn
+        button(yellow)
+
+        min-width 270px
+    &__input
+        height 50px
+
+        margin-bottom 35px
+        padding 0 10px 0 50px
+        outline none
+        border 2px solid white
+        box-sizing border-box
+        box-shadow none
+
+        letter-spacing 2px
+        font 300 12px/12px 'Lato', sans-serif
+        text-transform uppercase
+        color black
+
+        background-color white
+        transition all 0.2s
+        &::placeholder
+            font 300 12px/12px 'Lato', sans-serif
+            text-transform uppercase
+            color black
+            
+            opacity 0.8
+        &:focus
+            border 2px solid yellow

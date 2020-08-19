@@ -1,0 +1,102 @@
+.container 
+    min-max(320px, 100%, 0)
+
+
+.wrap 
+    min-max(320px, 1180px, 10px)
+
+
+li 
+    margin 0
+
+
+ul 
+    padding 0
+
+    
+body
+    font-family "Lato", Helvetica, sans-serif
+    font-size 14px
+    font-weight 400 
+    line-height 22px
+    background-color bg
+    overflow-wrap break-word
+    word-wrap break-word
+    max-width 1920px
+    margin 0 auto
+    color light-black
+
+h1, h2, h3, p
+    margin 0
+
+.active-link
+    opacity 
+    
+.button
+    button(white)
+
+.title-small
+    font-size 14px
+    font-weight 600 
+    line-height 22px
+    letter-spacing 0.03em
+    color light-black
+
+.title-1
+    font 82px/87px 'Cera Pro Medium', sans-serif
+    color white
+
+.title-2
+    font 200 48px/56px 'Lato', sans-serif
+    text-transform uppercase
+    letter-spacing 2.5px
+    color black
+    margin 0
+
+.subtitle
+    font 500 17px/12px 'Lato', sans-serif
+    color black
+    position relative
+    margin 0
+    margin-left 84px
+    &::before
+        content: ""
+        position absolute
+        top 7px
+        left -82px
+        width 60px
+        height 1px
+        background black
+
+.text
+    font 300 16px/24px 'Lato', sans-serif
+    color black
+    letter-spacing 0.5px
+
+.btn-with-arrow
+    button(white)
+    color black
+    display flex
+    align-items center
+    justify-content center
+    span
+        width 19px
+        height 19px
+        background-color red
+        display flex
+        justify-content center
+        align-items center
+        margin-left 10px
+    &--red
+        button(red)
+        height 70px
+        font-size 18px
+        display flex
+        span
+            width 19px
+            height 19px
+            background-color white
+            display flex
+            justify-content center
+            align-items center
+            margin-left 10px
