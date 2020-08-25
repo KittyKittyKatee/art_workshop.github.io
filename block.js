@@ -5,7 +5,6 @@ const fs = require('fs')
 const path = require('path')
 const colors = require('colors')
 const readline = require('readline')
-
 const rl = readline.createInterface(process.stdin, process.stdout);
 
 // folder with all blocks

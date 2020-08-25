@@ -6,7 +6,6 @@
         "Sergey Andreev"
     ],
     "license": "ISC",
-    "homepage": "https://github.com/serzhikkk/gulp-pug-stylus",
     "ignore": [
         "**/.*",
         "node_modules",
@@ -15,7 +14,6 @@
         "tests"
     ],
     "dependencies": {
-        "font-awesome": "^4.7.0",
-        "jquery": "^3.2.1"
+        "font-awesome": "^4.7.0"
     }
 }

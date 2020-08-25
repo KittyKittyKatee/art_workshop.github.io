@@ -18,6 +18,15 @@
             height 400px
             
             background-color light-gray
+            @media (max-width 768px)
+                height 500px
+                width 80%
+
+                left 0
+            @media (max-width 500px)
+                width 100%
+        @media (max-width 768px)
+            flex-direction column
     &__content
         position relative
         z-index 10
@@ -25,8 +34,18 @@
         margin-top 5px
     &__title
         margin-top 70px
+        white-space nowrap
         b
             font-weight 500
+        @media (max-width 900px)
+            font-size 38px
+            line-height 48px
+         @media (max-width 768px)
+            width 80%
+
+            margin-left 20px
+        @media (max-width 410px)
+            font-size 30px
     &__img
         display flex
         flex-direction column
@@ -36,6 +55,26 @@
             font 300 16px/30px 'Lato', sans-serif
             letter-spacing 0.8px
             color gray-text
+        @media (max-width 900px)
+            width 50vw
+            height auto
+
+            margin-top 50px
+            img 
+                object-fit cover
+        @media (max-width 768px)
+            width 470px
+            height 490px
+
+            margin-right 30px
+            margin-left auto
+        @media (max-width 580px) 
+            font-size 40px
+            width 80vw
+            height auto
+            img 
+                height 100%
+                width 100%
     &__name
             margin-bottom 28px
 
@@ -45,6 +84,8 @@
         display grid
         grid-template-columns 1fr 1fr
         grid-gap 40px
+        @media (max-width 600px)
+            grid-template-columns 1fr
     &__mid
         padding-top 100px
         padding-bottom 70px
@@ -63,6 +104,8 @@
             height 370px
 
             background-color light-gray
+            @media (max-width 800px)
+                top 0
         .about__title
             max-width 450px
             
@@ -71,5 +114,13 @@
         button(black)
         
         margin-top 75px
+        @media (max-width 900px)
+            margin-top 50px
     &__img-book
         margin-left -100px
+        @media (max-width 800px)
+            width 70%
+            img 
+                width 100%
+        @media (max-width 600px)
+            display none

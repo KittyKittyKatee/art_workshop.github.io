@@ -3,10 +3,23 @@
         padding-top 60px
     &__elems
         display grid
-        grid-template-columns: repeat(auto-fill, minmax(100px, 265px));
+        grid-template-columns: repeat(auto-fill, minmax(100px, 270px));
         grid-column-gap 25px
 
         margin-top 80px
+        @media (max-width 600px)
+           grid-template-columns: repeat(2, 1fr);
+    &__title
+        margin-left 40px
+        @media (max-width 620px) 
+            font-size 40px
+        @media (max-width 450px) 
+            font-size 30px
+            line-height 55px
+            margin-left 0
+        @media (max-width 400px) 
+            font-size 24px
+            line-height 45px
     &__text
         width 90%
 

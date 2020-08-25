@@ -3,8 +3,8 @@ mixin sercificates()
         .sercificates__wrap.wrap
             h5.sercificates__subtitle.subtitle наши награды
             .sercificates__title.title-2 <b> участие </b> <br> в международных <br> консурсах
-            .sercificates.slider
-                .slider__arrow
+            .sercificates__slider.slider
+                .slider__arrow.slider__arrow--prev
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="svg-icon icon-arrow icon-arrow-left" viewBox="0 0 50 50">
                         <g>
                             <rect data-name="Прямоугольник 39" class="cls-1" width="50" height="50"></rect>
@@ -12,17 +12,24 @@ mixin sercificates()
                             <path data-name="Фигура 17" class="cls-2" d="M431.3,6374.9H409.7" transform="translate(-395 -6349)"></path>
                         </g>
                     </svg>
-                .slider__content
-                    .slider__body
-                        .slider__slide
-                            img(src="../assets/images/sercificates-1.jpg")
-                        .slider__slide
-                            img(src="../assets/images/sercificates-1.jpg")
-                        .slider__slide
-                            img(src="../assets/images/sercificates-1.jpg")
-                        .slider__slide
-                            img(src="../assets/images/sercificates-1.jpg")
-                .slider__arrow
+                .slider__body.owl-carousel.owl-theme.sertificates-slider
+                    .slider__slide
+                        img(src="../assets/images/sercificates-1.jpg")
+                    .slider__slide
+                        img(src="../assets/images/sercificates-1.jpg")
+                    .slider__slide
+                        img(src="../assets/images/sercificates-1.jpg")
+                    .slider__slide
+                        img(src="../assets/images/sercificates-1.jpg")
+                    .slider__slide
+                        img(src="../assets/images/sercificates-1.jpg")
+                    .slider__slide
+                        img(src="../assets/images/sercificates-1.jpg")
+                    .slider__slide
+                        img(src="../assets/images/sercificates-1.jpg")
+                    .slider__slide
+                        img(src="../assets/images/sercificates-1.jpg")
+                .slider__arrow.slider__arrow--next
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="svg-icon icon-arrow icon-arrow-right" viewBox="0 0 50 50">
                         <style>.cls-1, .cls-2 { fill: none; stroke: #1b2024; }.cls-1 { stroke-width: 2px; } .cls-2 { stroke-width: 1px; fill-rule: evenodd;}
                         </style>

@@ -35,5 +35,8 @@
     "bugs": {
         "url": ""
     },
-    "homepage": ""
+    "homepage": "",
+    "dependencies": {
+        "lodash": "^4.17.20"
+    }
 }

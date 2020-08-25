@@ -6,29 +6,45 @@
         display grid
         grid-template-areas "elem-6 elem-7 elem-7 elem-8" "elem-9 elem-7 elem-7 elem-10"
         grid-template-rows 1fr 1fr
-        grid-template-columns 1fr 1fr 1fr 1fr
+        grid-template-columns repeat(4, 1fr)
         grid-gap 30px
 
-        max-height 556px
-
         margin-top 30px
-        margin-bottom 50px
+        margin-bottom 30px
+        @media (max-width 768px)
+            grid-template-areas "elem-6 elem-9" "elem-7 elem-7" "elem-7 elem-7" "elem-8 elem-10"
+            grid-template-rows repeat(4, 1fr)
+            grid-template-columns 1fr 1fr
     &__top
         display grid
         grid-template-areas "elem-1 elem-1 elem-2 elem-3" "elem-1 elem-1 elem-4 elem-4" "elem-5 elem-5 elem-4 elem-4"
-        grid-template-rows 1fr 1fr 1fr
-        grid-template-columns 1fr 1fr 1fr 1fr
+        grid-template-rows repeat(3, 1fr)
+        grid-template-columns repeat(4, 1fr)
         grid-gap 30px
-
-        max-height 860px
+        @media (max-width 768px)
+            grid-template-areas "elem-1 elem-1" "elem-1 elem-1" "elem-2 elem-3" "elem-4 elem-4" "elem-4 elem-4" "elem-5 elem-5"  
+            grid-template-rows repeat(6, 1fr)
+            grid-template-columns 1fr 1fr
     &__bottom
         display grid
         grid-template-areas "elem-11 elem-11 elem-12 elem-12"
         grid-template-rows 1fr
-        grid-template-columns 1fr 1fr
         grid-gap 30px
 
         max-height 270px
+        @media (max-width 768px)
+            grid-template-areas "elem-11 elem-11" " elem-12 elem-12"
+            grid-template-rows 1fr 1fr
+            grid-template-columns 1fr 1fr
+
+            max-height 100%
+    &__bottom, &__top, &__mid
+        @media (max-width 960px)
+           grid-gap 20px
+    &__top, &__mid
+        @media (max-width 960px)
+           margin-bottom 20px
+           margin-top 0
     &__elem
         position relative
 

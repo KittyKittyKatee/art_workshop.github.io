@@ -1,26 +1,50 @@
 .banner
     background fixed url(../../assets/images/heading-bg.jpg) no-repeat
+    overflow-x hidden
     &__wrap
         position relative
 
-        padding 13% 0 13%
+        padding 13% 20px 13%
+        @media (max-width 1200px)
+            padding 200px 20px
     &__content
         display flex
         flex-direction column
         align-items center
+        position relative
+        z-index 10
     &__title
         margin-bottom 22px
 
         font 300 64px/100px 'Roboto Condensed', sans-serif
         color white
         text-align center
+        @media (max-width 1100px)
+            font-size 48px
+            line-height 70px
+        @media (max-width 700px)
+            line-height 50px
+        @media (max-width 520px)
+            font-size 30px
+            line-height 30px
         span 
             font-size 86px
             text-transform uppercase
+            @media (max-width 1100px)
+                display block
+                font-size 64px
+                margin-top 30px
+            @media (max-width 700px)
+                line-height 70px
+            @media (max-width 520px)
+                font-size 48px
+                line-height 60px
     &__text
         margin-bottom 88px
+        margin 0 40px 88px 
 
         font 300 24px/1 'Lato', sans-serif
+        text-align center
         color white
     &__btn
         button(yellow)
@@ -34,6 +58,8 @@
     align-items center
 
     width 100%
+    @media (max-width 870px)
+        justify-content center
     &__elems
         display flex
         
@@ -41,10 +67,14 @@
         margin-bottom 30px
 
         list-style none
+        @media (max-width 870px)
+            display none
     &__elem
         margin-right 80px
         &:last-child
             margin-right 20px
+        @media (max-width 1200px)
+            margin-right 40px
     &__btn
         margin-bottom 20px
     &__link

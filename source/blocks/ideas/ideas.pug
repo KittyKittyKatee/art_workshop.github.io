@@ -3,7 +3,7 @@ mixin ideas()
         .ideas__wrap.wrap
             .ideas__title.title-2 <b> от идеи </b> <br> до воплощения
             .ideas__slider.slider
-                .slider__arrow
+                .slider__arrow.slider__arrow--prev
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="svg-icon icon-arrow icon-arrow-left" viewBox="0 0 50 50">
                         <g>
                             <rect data-name="Прямоугольник 39" class="cls-1" width="50" height="50"></rect>
@@ -12,11 +12,21 @@ mixin ideas()
                         </g>
                     </svg>
                 .slider__content
-                    .slider__body
+                    .slider__body.ideas-slider.owl-carousel.owl-theme
                         .slider__slide
                             img(src="../assets/images/ideas-1.jpg")
-                    .slider__count <b> 5 </b>  /  <span> 10 </span>
-                .slider__arrow
+                        .slider__slide
+                            img(src="../assets/images/ideas-1.jpg")
+                        .slider__slide
+                            img(src="../assets/images/ideas-1.jpg")
+                        .slider__slide
+                            img(src="../assets/images/ideas-1.jpg")
+                        .slider__slide
+                            img(src="../assets/images/ideas-1.jpg")
+                    .slider__counter
+                        b
+                        span
+                .slider__arrow.slider__arrow--next
                     <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="svg-icon icon-arrow icon-arrow-right" viewBox="0 0 50 50">
                         <style>.cls-1, .cls-2 { fill: none; stroke: #1b2024; }.cls-1 { stroke-width: 2px; } .cls-2 { stroke-width: 1px; fill-rule: evenodd;}
                         </style>
