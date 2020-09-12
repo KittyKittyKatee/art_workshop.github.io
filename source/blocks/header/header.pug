@@ -2,11 +2,13 @@ mixin header()
     header.header
         .header__wrap.wrap
             a.header__logo(href="#"): img(src="../assets/images/logo.jpg")
-            .header__call
-                a.header__phone(href="tel:+79261177722") +7 (926) 11-777-22  
-                a.header__button-call заказать звонок
-                //- .header__burger
-                //-     - var n = 0;
-                //-     while n < 3
-                //-         - n++
-                //-         span
+            .header__right
+                .header__call
+                    a.header__phone(href="tel:+79261177722") +7 (926) 11-777-22  
+                    a.header__button-call заказать звонок
+                .header__burger-place
+                .header__burger
+                    - var n = 0;
+                    while n < 3
+                        - n++
+                        span

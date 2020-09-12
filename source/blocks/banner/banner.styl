@@ -52,37 +52,3 @@
         position absolute
         bottom 0
 
-.menu
-    display flex
-    justify-content space-between
-    align-items center
-
-    width 100%
-    @media (max-width 870px)
-        justify-content center
-    &__elems
-        display flex
-        
-        margin 0
-        margin-bottom 30px
-
-        list-style none
-        @media (max-width 870px)
-            display none
-    &__elem
-        margin-right 80px
-        &:last-child
-            margin-right 20px
-        @media (max-width 1200px)
-            margin-right 40px
-    &__btn
-        margin-bottom 20px
-    &__link
-        font 300 14px/18px 'Lato', sans-serif
-        text-transform uppercase
-        text-decoration none
-        color white
-        
-        transition all 0.2s
-        &:hover
-            color yellow

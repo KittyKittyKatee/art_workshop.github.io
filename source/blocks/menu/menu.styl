@@ -1,0 +1,81 @@
+.menu
+    display flex
+    justify-content space-between
+    align-items center
+
+    width 100%
+    height 90px
+    @media (max-width 925px)
+        justify-content center
+    nav
+        @media(max-width 925px)
+            display none
+            position fixed
+            top 0
+            left 0
+            z-index 50
+
+            width 100vw
+            height 100vh
+
+            margin 0
+
+            background-color black
+    &__elems
+        display flex
+        
+        margin 0
+        margin-bottom 10px
+
+        list-style none
+        @media (max-width 925px)
+            flex-direction column
+            align-items center
+            justify-content center
+
+            width 100vw
+            height 100vh
+    &__elem
+        margin-right 80px
+        &:last-child
+            margin-right 20px
+        @media (max-width 1200px)
+            margin-right 40px
+        @media (max-width 925px)
+            margin 0
+            margin-bottom 26px
+            &:last-child
+                margin-right 0
+    &__btn
+        margin-right 40px
+
+        cursor pointer
+        animation yoyo 3s ease-in-out infinite
+        rect, path 
+            stroke white
+            transition all 0.3s
+        &:hover
+            rect, path 
+                stroke yellow
+    &__link
+        font 300 14px/18px 'Lato', sans-serif
+        text-transform uppercase
+        text-decoration none
+        color white
+        
+        transition all 0.2s
+        &:hover
+            color yellow
+        @media (max-width 925px)
+            font 300 24px/28px 'Lato', sans-serif
+@keyframes yoyo {
+    0% {     
+        transform translateY(10px)
+    }   
+    50% {
+       transform translateY(-10px)
+    }
+    100% {     
+        transform translateY(10px)
+    }  
+}

@@ -5,20 +5,21 @@ mixin banner()
                 h2.banner__title Художественная мастерская<br> <span>АЛЕКСАНДРА БЕЗРУКОВА</span>
                 p.banner__text Архитектура — это искусство, в котором мы живём.
                 button.banner__btn.btn-outline.animate-btn <span></span> от идеи до воплощения
-            nav.banner__menu.menu
-                ul.menu__elems
-                    li.menu__elem: a.menu__link(href="#") о компании
-                    li.menu__elem: a.menu__link(href="#") портфолио
-                    li.menu__elem: a.menu__link(href="#") преимущества
-                    li.menu__elem: a.menu__link(href="#") о нас
-                    li.menu__elem: a.menu__link(href="#") реализация
-                    li.menu__elem: a.menu__link(href="#") мастерская
+            .banner__menu.menu
+                nav
+                    ul.menu__elems
+                        li.menu__elem: a.menu__link(data-link="company") о компании
+                        li.menu__elem: a.menu__link(data-link="portfolio") портфолио
+                        li.menu__elem: a.menu__link(data-link="advs") преимущества
+                        li.menu__elem: a.menu__link(data-link="about") о нас
+                        li.menu__elem: a.menu__link(data-link="sercificates") реализация
+                        li.menu__elem: a.menu__link(data-link="workshop") мастерская
                 .menu__btn
                     <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-down" width="50" height="50" viewBox="0 0 50 50">
                         <g>
-                            <rect stroke-width="2px" transition="all 0.3s ease-in-out" fill="none" stroke="#fff" data-name="Прямоугольник 39" class="cls-1" width="50" height="50"></rect>
-                            <path data-name="Фигура 18" stroke-width="1px" fill-rule="evenodd" transition="all 0.3s ease-in-out" fill="none" stroke="#fff" class="cls-2" d="M1512.9,850.3l7.54,8,7.66-8" transform="translate(-1495 -823)"></path>
-                            <path data-name="Фигура 17" stroke-width="1px" fill-rule="evenodd" transition="all 0.3s ease-in-out" fill="none" stroke="#fff" class="cls-2" d="M1520.9,836.7v21.6" transform="translate(-1495 -823)"></path>
+                            <rect data-name="Прямоугольник 39" class="cls-1" width="50" height="50"></rect>
+                            <path data-name="Фигура 18" class="cls-2" d="M1512.9,850.3l7.54,8,7.66-8" transform="translate(-1495 -823)"></path>
+                            <path data-name="Фигура 17" class="cls-2" d="M1520.9,836.7v21.6" transform="translate(-1495 -823)"></path>
                         </g>
                     </svg>
         

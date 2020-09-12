@@ -1,7 +1,8 @@
+// import { throttle } from '../../../node_modules/lodash/fp';
 $(function(){
-    var btn = $('.animate-btn');
-    var slide = $('.animate-btn').find('span');
-    var borderColor = slide.css('border-color');
+    const btn = $('.animate-btn');
+    const slide = $('.animate-btn').find('span');
+    const borderColor = slide.css('border-color');
     btn.mouseenter(throttle(
         function(){
             setTimeout(function(){

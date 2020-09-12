@@ -2,7 +2,6 @@
     position absolute
     top 20px
     left 0
-    z-index 10
 
     width 100%
     &__wrap
@@ -10,6 +9,8 @@
         justify-content space-between
 
         width 100%
+    &__right
+        display flex
     &__logo
         width 57px
         height 58px
@@ -25,7 +26,9 @@
     &__main
         display flex
         align-items center
+
         height 175px
+
         margin-right 60px
     &__elem
         margin-right 50px
@@ -35,6 +38,7 @@
         text-decoration none
         font 20px/24px 'Cera Pro Bold', sans-serif;
         color white
+
         transition all 0.3s ease-in-out
         &:hover, &:active
             color red
@@ -44,24 +48,28 @@
         flex-direction column
         align-items flex-end
     &__phone
+        margin-bottom 8px
+
         text-decoration none
         font 300 20px/26px 'Lato', sans-serif
         letter-spacing 1px
         color white
-        margin-bottom 8px
+        
         cursor pointer
         transition all 0.2s
         &:hover
             color yellow
     &__button-call
+        position relative
+
         text-decoration none
         font 500 12px/16px 'Lato', sans-serif
         letter-spacing 0.5px
         text-transform uppercase
         color white
+
         cursor pointer
         transition all 0.2s
-        position relative
         &:hover
             color yellow
         &::before
@@ -69,21 +77,58 @@
             position absolute
             top 7px
             left -44px
+
             width 30px
             height 1px
+
             background yellow
+    &__burger-place
+        display none
+
+        width 60px
+        height 50px
+
+        margin-left 70px
+        @media(max-width 1654px)
+            display block
     &__burger 
-        display flex
         flex-direction column
         justify-content space-between
+        display none
+        position fixed
+        top 20px
+        right 60px
+        z-index 101
+        
+        margin-left 50px
+        margin-top 10px
+
         cursor pointer
+        @media(max-width 1654px)
+            display flex
+        @media(max-width 620px)
+            right 30px
+            top 30px
         span
-            width 20px
-            height 2px
-            background black
-            margin-bottom 3px
-            transition all 0.2s
-        &:hover, &:active
-            opacity .5
+            width 50px
+            height 4px
+
+            margin-bottom 12px
+
+            background-color yellow
+            transition all 0.3s ease-in-out
+        &:hover
+            span
+                background-color white
+        &.close
+            span
+                &:nth-child(1)
+                    transform rotate(45deg) translate(12px, 11px)
+                &:nth-child(2)
+                    transform rotate(-45deg)
+                &:nth-child(3)
+                    transform rotate(45deg) translate(-12px, -11px)
+                    opacity 0
+        
     &__button
         margin-right 30px

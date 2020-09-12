@@ -1,12 +1,12 @@
 mixin menu()
-    nav.menu
+    nav.menu.wrap
         ul.menu__elems
-            li.menu__elem: a.menu__link(href="#") о компании
-            li.menu__elem: a.menu__link(href="#") портфолио
-            li.menu__elem: a.menu__link(href="#") преимущества
-            li.menu__elem: a.menu__link(href="#") о нас
-            li.menu__elem: a.menu__link(href="#") реализация
-            li.menu__elem: a.menu__link(href="#") мастерская
+            li.menu__elem: a.menu__link(data-link="company") о компании
+            li.menu__elem: a.menu__link(data-link="portfolio") портфолио
+            li.menu__elem: a.menu__link(data-link="advs") преимущества
+            li.menu__elem: a.menu__link(data-link="about") о нас
+            li.menu__elem: a.menu__link(data-link="sercificates") реализация
+            li.menu__elem: a.menu__link(data-link="workshop") мастерская
         .menu__btn
             <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-down" width="50" height="50" viewBox="0 0 50 50">
                 <g>

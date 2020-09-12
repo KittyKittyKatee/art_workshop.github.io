@@ -1,7 +1,7 @@
 $(function(){
-    var counter = $('.ideas__slider').find('.slider__counter');
+    const counter = $('.ideas__slider').find('.slider__counter');
 
-    var slider = $(".owl-carousel.ideas-slider").owlCarousel({
+    const slider = $(".owl-carousel.ideas-slider").owlCarousel({
         loop: true,
         nav: true,
         margin: 0,
@@ -19,8 +19,8 @@ $(function(){
         counter.find('span').text(' / ' + e.item.count);
     });
 
-    var nextButton = $('.ideas__slider').find('.slider__arrow--next');
-    var prevButton = $('.ideas__slider').find('.slider__arrow--prev');
+    const nextButton = $('.ideas__slider').find('.slider__arrow--next');
+    const prevButton = $('.ideas__slider').find('.slider__arrow--prev');
 
     nextButton.click(function(){
         slider.trigger("next.owl.carousel");
