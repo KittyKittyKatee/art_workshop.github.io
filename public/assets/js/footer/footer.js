@@ -1,0 +1,2 @@
+// .footer scripts goes here
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJmb290ZXIvZm9vdGVyLmpzIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIC5mb290ZXIgc2NyaXB0cyBnb2VzIGhlcmUiXSwiZmlsZSI6ImZvb3Rlci9mb290ZXIuanMifQ==
