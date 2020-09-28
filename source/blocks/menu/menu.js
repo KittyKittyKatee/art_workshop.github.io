@@ -6,11 +6,13 @@ $(function () {
   const menu = $('.menu').find('nav');
 
   function openMenu() {
-    burger.toggleClass('close');
-    if (menu.css('display') == 'none') {
-      menu.fadeIn();
-    } else {
-      menu.fadeOut();
+    if (burger.css('display') != 'none') {
+      burger.toggleClass('close');
+      if (menu.css('display') == 'none') {
+        menu.fadeIn();
+      } else {
+        menu.fadeOut();
+      }
     }
   }
 
@@ -27,11 +29,4 @@ $(function () {
 
     $("html, body").animate({ scrollTop: target }, 1300);
   }
-
-  //фиксированное меню
-  const fixedMenu = $(".header__fixed");
-
-  $(window).scroll(function () {
-    ($(this).scrollTop() > (window.innerHeight * 2)) ? fixedMenu.fadeIn() : fixedMenu.fadeOut()
-  });
 })

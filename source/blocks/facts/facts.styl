@@ -20,7 +20,8 @@
 
             background-color light-gray
             @media (max-width 950px)
-                width 98%
+                width 90%
+                right 20px
     &__subtitle
         margin-left 30px
         @media (max-width 950px)
@@ -41,6 +42,11 @@
         list-style none
         @media (max-width 950px)
             width 100%
+        @media (max-width 660px)
+            flex-direction column
+
+            max-width 200px
+            margin 50px auto 0
     &__elem
         display flex
         flex-direction column
@@ -51,5 +57,7 @@
         text-transform uppercase
         b
             font 700 48px/62px 'Lato', sans-serif
+        @media (max-width 660px)
+            margin-bottom 30px
 
         

@@ -25,6 +25,8 @@ body
     max-width 1920px
     margin 0 auto
     color light-black
+    @media (max-width 400px)
+        min-width 400px
 
 h1, h2, h3, p
     margin 0
@@ -100,3 +102,21 @@ h1, h2, h3, p
             justify-content center
             align-items center
             margin-left 10px
+
+@keyframes little-shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

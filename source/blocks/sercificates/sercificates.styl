@@ -4,12 +4,16 @@
         padding-bottom 70px
     &__title
         margin 66px 0 60px 100px
+        @media (max-width 660px)
+            margin 66px 0 60px 20px
     &__subtitle
         margin-left 180px
     .slider
         grid-template-columns 1fr 896px 1fr
         @media (max-width 1000px)
             grid-template-columns 1fr 80vw 1fr
+        @media (max-width 600px)
+            grid-template-columns 40px 65vw 40px
         &__slide
             display flex !important
             justify-content center

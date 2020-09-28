@@ -7,8 +7,8 @@ mixin menu()
             li.menu__elem: a.menu__link(data-link="about") о нас
             li.menu__elem: a.menu__link(data-link="sercificates") реализация
             li.menu__elem: a.menu__link(data-link="workshop") мастерская
-        .menu__btn
-            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-down" width="50" height="50" viewBox="0 0 50 50">
+        .menu__btn.menu__link: a(data-link="company")
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon arrow-down" width="50" height="50" viewBox="0 0 50 50" data-link="company">
                 <g>
                     <rect data-name="Прямоугольник 39" class="cls-1" width="50" height="50"></rect>
                     <path data-name="Фигура 18" class="cls-2" d="M1512.9,850.3l7.54,8,7.66-8" transform="translate(-1495 -823)"></path>

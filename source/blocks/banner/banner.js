@@ -26,7 +26,7 @@ $(function () {
         }, {
           duration: 200,
           complete: function () {
-            slide.css('top', '-100%');
+            elem.find('span').css('top', '-100%');
           }
         })
         elem.css('color', mainColor);
