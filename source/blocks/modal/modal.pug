@@ -1,0 +1,20 @@
+mixin modal()
+    .modal
+        .modal__wrap.wrap
+            button.modal__close
+                svg: use(xlink:href="./assets/sprites.svg#close")
+            h2.modal__title Закажите звонок
+            p.modal__text Ответ в течение 15 минут
+            form(method="POST" id="modal__form").modal__form.form
+                input.form__input(type="text" name="name" placeholder="ВАШЕ ИМЯ")
+                input.form__input(type="text" name="tel" id="tel" placeholder="ВАШ ТЕЛЕФОН")
+                button(type="submit").form__btn.animate-btn <span></span> оставить заявку
+                .modal__agree.agree
+                    .agree__checkbox
+                        input(type="checkbox" checked)
+                        .agree__fake-checkbox
+                    span Нажимая кнопку "Оставить заявку", я даю своё согласие на обработку моих персональных данных в соответствии с Федеральным законом от 27.07.2006 года №152‑ФЗ "О персональных данных", на условиях и для целей, определённых в Согласии на обработку персональных данных.                   
+        .modal__bg
+                    
+
+

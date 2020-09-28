@@ -248,4 +248,10 @@
         <line class="st0" x1="52" y1="36" x2="52" y2="40"></line>
         <line class="st0" x1="52" y1="42" x2="52" y2="44"></line>
     </symbol>
+    <symbol id="close" viewBox="0 0 20 20">
+        <g data-name="закрыть ">
+            <path data-name="Фигура 13" class="cls-1" d="M1190.91,168.907l18.15,18.156" transform="translate(-1190 -168)"></path>
+            <path data-name="Фигура 14" class="cls-1" d="M1190.91,187.063l18.15-18.156" transform="translate(-1190 -168)"></path>
+        </g>
+    </symbol>
 </svg>

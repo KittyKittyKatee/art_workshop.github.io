@@ -13,12 +13,15 @@ include ../blocks/news/news.pug
 include ../blocks/sercificates/sercificates.pug
 include ../blocks/form-2/form-2.pug
 include ../blocks/contacts/contacts.pug
+include ../blocks/modal/modal.pug
 
 
 block title
     title Художественная мастерская АЛЕКСАНДРА БЕЗРУКОВА
 
 block pagecontent
+    +modal()
+
     +header()
 
     +banner()
